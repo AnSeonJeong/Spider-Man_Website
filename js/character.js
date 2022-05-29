@@ -46,13 +46,11 @@ const SHOW = "show";
 
 charList.forEach((li) => {
   li.addEventListener("click", () => {
-    console.log(li);
     for (let i = 0; i < character.length; i++) {
       if (li.innerText === character[i].name) {
         charImg.src = `images/${character[i].img}`;
         charName.innerText = character[i].name;
         charDesc.innerText = character[i].desc;
-        console.log(charImg);
       } else {
         charImg.classList.remove(SHOW);
       }
