@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/character.js" defer></script>
+    <script src="js/gallery.js" defer></script>
   </head>
   <body>
     <header id="header">
@@ -64,20 +65,19 @@
         </div>
       </section>
       <section id="sinopsis">
-        <div class="sinopsis_content">
-          <p>
-            After Quentin Beck frames Peter Parker for murder and reveals his
-            identity as Spider-Man, Parker, his girlfriend MJ, best friend Ned
-            Leeds, and aunt May are interrogated by the Department of Damage
-            Control. Lawyer Matt Murdock gets Parker's charges dropped, but the
-            group grapples with negative publicity. After Parker, MJ, and Ned's
-            MIT applications are rejected, Parker goes to the New York Sanctum
-            to ask Stephen Strange for help. Strange casts a spell that would
-            make everyone forget Parker is Spider-Man, but it is corrupted when
-            Parker repeatedly requests alterations to let his loved ones retain
-            their memories. Strange contains the spell to stop it and makes
-            Parker leave.
-            <br /><br />
+        <div class="sinopsis_content active">
+          <p class="active">
+            class="swipe" After Quentin Beck frames Peter Parker for murder and
+            reveals his identity as Spider-Man, Parker, his girlfriend MJ, best
+            friend Ned Leeds, and aunt May are interrogated by the Department of
+            Damage Control. Lawyer Matt Murdock gets Parker's charges dropped,
+            but the group grapples with negative publicity. After Parker, MJ,
+            and Ned's MIT applications are rejected, Parker goes to the New York
+            Sanctum to ask Stephen Strange for help. Strange casts a spell that
+            would make everyone forget Parker is Spider-Man, but it is corrupted
+            when Parker repeatedly requests alterations to let his loved ones
+            retain their memories. Strange contains the spell to stop it and
+            makes Parker leave. <br /><br />
             Parker tries to convince an MIT administrator to reconsider MJ and
             Ned's applications but is attacked by Otto Octavius. Octavius rips
             Parker's nanotechnology from his Iron Spider suit which bonds with
@@ -95,8 +95,6 @@
       <section id="character">
         <ul class="character_menu">
           <li>Spider - Man</li>
-          <li>MJ</li>
-          <li>Ned Leeds</li>
           <li>Dr. Strange</li>
           <li>Doctor Octopus</li>
           <li>Electro</li>
@@ -111,7 +109,6 @@
               class="show"
               alt="character"
             />
-            <!-- <span>PETER<br> PARKER</span> -->
           </div>
           <div class="char_desc">
             <h2>Spider - Man</h2>
@@ -135,7 +132,64 @@
           </div>
         </div>
       </section>
-      <section id="gallery"></section>
+      <section id="gallery">
+        <ul class="slide">
+          <li class="photo">
+            <img src="images/gallery1.jpg" alt="gallery1" />
+          </li>
+          <li class="photo">
+            <img src="images/gallery2.jpg" alt="gallery2" />
+          </li>
+          <li class="photo">
+            <img src="images/gallery3.jpg" alt="gallery3" />
+          </li>
+          <li class="photo">
+            <img src="images/gallery4.jpg" alt="gallery4" />
+          </li>
+          <li class="photo">
+            <img src="images/gallery5.jpg" alt="gallery5" />
+          </li>
+          <li class="photo">
+            <img src="images/gallery6.jpg" alt="gallery6" />
+          </li>
+          <li class="photo">
+            <img src="images/gallery7.jpg" alt="gallery7" />
+          </li>
+        </ul>
+        <ul class="slide">
+          <li class="photo">
+            <img src="images/gallery8.jpg" alt="gallery81" />
+          </li>
+          <li class="photo">
+            <img src="images/gallery9.jpg" alt="gallery9" />
+          </li>
+          <li class="photo">
+            <img src="images/gallery10.jpg" alt="gallery10" />
+          </li>
+          <li class="photo">
+            <img src="images/gallery11.jpg" alt="gallery11" />
+          </li>
+          <li class="photo">
+            <img src="images/gallery12.jpg" alt="gallery12" />
+          </li>
+          <li class="photo">
+            <img src="images/gallery13.jpg" alt="gallery13" />
+          </li>
+          <li class="photo">
+            <img src="images/gallery14.jpg" alt="gallery14" />
+          </li>
+          <li class="photo">
+            <img src="images/gallery15.jpg" alt="gallery15" />
+          </li>
+        </ul>
+        <div class="gallery_text">
+          <span>Spider-Man : No Way Home (2021)</span>
+          <!-- <span>based on the Marvel Comics character Spider-Man</span> -->
+          <span
+            >Welcome to Photo Gallery, click on the photo for more detail</span
+          >
+        </div>
+      </section>
       <section id="trailer">
         <iframe
           width="952"
@@ -150,7 +204,7 @@
       <section id="series">
         <div class="series_wrap">
           <ul>
-            <li>
+            <li class="slider">
               <img src="images/series_1.jpg" alt="series1" />
               <div class="series_desc">
                 <h3></h3>
@@ -158,7 +212,7 @@
                 <span></span>
               </div>
             </li>
-            <li>
+            <li class="slider">
               <img src="images/series_2.jpg" alt="series2" />
               <div class="series_desc">
                 <h3></h3>
@@ -166,7 +220,7 @@
                 <span></span>
               </div>
             </li>
-            <li>
+            <li class="slider">
               <img src="images/series_3.jpg" alt="series3" />
               <div class="series_desc">
                 <h3></h3>
@@ -174,7 +228,7 @@
                 <span></span>
               </div>
             </li>
-            <li>
+            <li class="slider">
               <img src="images/series_4.jpg" alt="series4" />
               <div class="series_desc">
                 <h3></h3>
@@ -182,7 +236,7 @@
                 <span></span>
               </div>
             </li>
-            <li>
+            <li class="slider">
               <img src="images/series_5.jpg" alt="series5" />
               <div class="series_desc">
                 <h3></h3>
