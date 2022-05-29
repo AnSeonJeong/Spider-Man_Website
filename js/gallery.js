@@ -19,7 +19,7 @@ function makeClone() {
 makeClone();
 
 const photos = document.querySelectorAll(".slide .photo");
-console.log(photos);
+let clicked = false;
 
 const CLICKED = "clicked";
 
@@ -27,5 +27,8 @@ photos.forEach((photo) => {
   photo.addEventListener("click", () => {
     photo.classList.toggle(CLICKED);
     photo.querySelector("img").classList.toggle(CLICKED);
+    slide[0].classList.toggle(ACTIVE);
+    slide[1].classList.toggle(ACTIVE);
+    clicked = true;
   });
 });
