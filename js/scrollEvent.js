@@ -24,7 +24,6 @@ window.addEventListener("scroll", () => {
     sectionPosArr.push(sectionPosValue);
   }
 
-  console.log(currentScroll, sectionPosArr[5]);
   menuList.forEach((a) => {
     if (
       (currentScroll >= sectionPosArr[1] && currentScroll < sectionPosArr[3]) ||

@@ -252,7 +252,7 @@ section {
   top: 50%;
   z-index: 5;
   transform: translate(-100%, -50%);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .character_menu.show {
@@ -506,6 +506,7 @@ section {
   height: 100%;
   transition: 0.7s;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .series_wrap ul li:nth-child(3) {
@@ -530,6 +531,10 @@ section {
 }
 .series_wrap ul li:nth-child(5).slider {
   transform: rotateY(-27deg) translateX(300px) translateZ(-300px);
+}
+
+.series_wrap ul li:hover {
+  transform: rotateY(0deg) translateZ(0px);
 }
 
 .series_desc {
