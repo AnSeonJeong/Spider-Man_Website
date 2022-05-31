@@ -38,7 +38,7 @@ const character = [
 ];
 
 const charList = document.querySelectorAll(".character_menu li");
-const charImg = document.querySelector(".char_img img");
+const charImg = document.querySelector("#character img");
 const charName = document.querySelector(".char_desc h2");
 const charDesc = document.querySelector(".char_desc p");
 

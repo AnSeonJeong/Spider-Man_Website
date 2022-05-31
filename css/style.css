@@ -80,7 +80,7 @@ a {
   /* padding: 0 40px; */
 }
 
-#ham {
+/* #ham {
   width: 90px;
   height: 90px;
   background-color: var(--main-color);
@@ -102,7 +102,7 @@ a {
 
 .ham_bar li:not(:nth-child(1)) {
   margin-top: 7px;
-}
+} */
 
 #main {
   background: url("../images/bg.png") no-repeat 82% 47% / 39%,
@@ -278,7 +278,7 @@ section {
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
 }
 
-.character_warp .char_img img {
+#character img {
   width: 634px;
   position: absolute;
   left: 15%;
@@ -289,7 +289,7 @@ section {
   opacity: 0;
 }
 
-.character_warp .char_img img.show {
+#character img.show {
   animation: showChar 0.5s ease both;
 }
 
@@ -304,16 +304,7 @@ section {
   }
 }
 
-.character_warp .char_img span {
-  font-size: 80px;
-  font-weight: 800;
-  opacity: 0.16;
-  position: absolute;
-  left: 35%;
-  bottom: 43%;
-}
-
-.character_warp .char_desc {
+.char_desc {
   width: 560px;
   text-align: justify;
   position: absolute;
@@ -325,7 +316,7 @@ section {
   transition-delay: 0.3s;
 }
 
-.character_warp .char_desc.show {
+.char_desc.show {
   opacity: 1;
 }
 
@@ -353,7 +344,7 @@ section {
 
 /* gallery */
 #gallery {
-  overflow-x: hidden;
+  overflow: hidden;
   padding: 50px 0;
   transition: 0.3s;
 }
