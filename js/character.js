@@ -38,7 +38,7 @@ const character = [
 ];
 
 const charList = document.querySelectorAll(".character_menu li");
-const charImg = document.querySelector("#character img");
+const charImg = document.querySelectorAll("#character img");
 const charName = document.querySelector(".char_desc h2");
 const charDesc = document.querySelector(".char_desc p");
 
@@ -48,13 +48,16 @@ charList.forEach((li) => {
   li.addEventListener("click", () => {
     for (let i = 0; i < character.length; i++) {
       if (li.innerText === character[i].name) {
-        charImg.src = `images/${character[i].img}`;
         charName.innerText = character[i].name;
         charDesc.innerText = character[i].desc;
-      } else {
-        charImg.classList.remove(SHOW);
+        charImg.forEach((img) => {
+          if (img.alt === character[i].name) {
+            img.classList.add(SHOW);
+          } else {
+            img.classList.remove(SHOW);
+          }
+        });
       }
     }
-    charImg.classList.add(SHOW);
   });
 });

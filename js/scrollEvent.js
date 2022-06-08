@@ -51,12 +51,18 @@ window.addEventListener("scroll", () => {
   }
   if (currentScroll >= sectionPosArr[2]) {
     charMenu.classList.add(SHOW);
-    charImg.classList.add(SHOW);
-    charImg.style.trasitionDelay = "0.5s";
     charCon.classList.add(SHOW);
+    charImg.forEach((img) => {
+      if (img.alt === charName.innerText) {
+        img.classList.add(SHOW);
+        img.style.trasitionDelay = "0.5s";
+      }
+    });
   } else {
+    charImg.forEach((img) => {
+      img.classList.remove(SHOW);
+    });
     charMenu.classList.remove(SHOW);
-    charImg.classList.remove(SHOW);
     charCon.classList.remove(SHOW);
   }
   if (currentScroll < sectionPosArr[3]) {
