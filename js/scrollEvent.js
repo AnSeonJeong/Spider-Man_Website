@@ -14,7 +14,7 @@ const FADEOUT = "fade_out";
 
 window.addEventListener("scroll", () => {
   const currentScroll = document.body.scrollTop
-    ? document.body.scrlollTop
+    ? document.body.scrollTop
     : document.documentElement.scrollTop;
 
   let sectionPosArr = [];
